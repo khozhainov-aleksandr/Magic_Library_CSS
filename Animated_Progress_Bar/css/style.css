@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(45deg, #93278f, #00a99d);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 200px;
+}
+
+.progress {
+  cursor: pointer;
+  background-color: #111;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 70px;
+  padding: 6px;
+}
+.progress:hover .fill {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.progress:hover .number {
+  -webkit-transform: translatey(-40px);
+          transform: translatey(-40px);
+  visibility: visible;
+  opacity: 1;
+}
+.progress:hover .name {
+  -webkit-transform: translatey(-40px);
+          transform: translatey(-40px);
+  visibility: visible;
+  opacity: 1;
+}
+.progress:nth-child(1) .fill {
+  background-color: #17c400;
+  width: 89%;
+}
+.progress:nth-child(2) .fill {
+  background-color: #ffe600;
+  width: 67%;
+}
+.progress:nth-child(3) .fill {
+  background-color: #ff0000;
+  width: 14%;
+}
+.progress .number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.progress .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.progress .fill {
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+  background-size: 40px;
+  border-radius: 5px;
+  height: 100%;
+  -webkit-animation: move 0.5s linear infinite paused;
+          animation: move 0.5s linear infinite paused;
+}
+
+@-webkit-keyframes move {
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes move {
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

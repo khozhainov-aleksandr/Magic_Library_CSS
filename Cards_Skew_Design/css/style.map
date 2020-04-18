@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"* {\n    margin: 0;\n    padding: 0;\n    text-decoration: none;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n.wrapper {\n    background: linear-gradient(45deg, #D585FF, #00FFEE);\n    height: 100vh;\n}\n\n.card {\n    width: 340px;\n    height: 480px;\n    cursor: pointer;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate( -50%, -50%);\n}\n\n.front,\n.back {\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    position: absolute;\n    backface-visibility: hidden;\n    transition: transform 0.5s ease;\n    border-radius: 10px;\n    background: linear-gradient(#D6D6D6, #2afd70)\n}\n\n.front {\n    transform: perspective(600px) rotateY(0);\n    img {\n        width: 100%;\n        height: 100%;\n    }\n}\n\n.back {\n    transform: perspective(600px) rotateY(180deg);\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,4BAA4B;CAC5C;;;AAED,AAAA,QAAQ,CAAC;EACL,UAAU,EAAE,wCAAwC;EACpD,MAAM,EAAE,KAAK;CAChB;;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,OAAO;EACf,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAsB;CACpC;;;AAED,AAAA,MAAM;AACN,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;EAClB,mBAAmB,EAAE,MAAM;EAC3B,UAAU,EAAE,mBAAmB;EAC/B,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,iCAAiC;CAChD;;;AAED,AAAA,MAAM,CAAC;EACH,SAAS,EAAE,kBAAkB,CAAC,UAAU;CAK3C;;;AAND,AAEI,MAFE,CAEF,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf;;;AAGL,AAAA,KAAK,CAAC;EACF,SAAS,EAAE,kBAAkB,CAAC,eAAe;CAChD"
+}
